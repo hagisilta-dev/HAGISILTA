@@ -1,0 +1,15 @@
+{
+  "표시 언어는 다음 실행부터 적용됩니다. 현재 작업은 계속할 수 있습니다.": "The display language changes on the next launch. You can continue the current task.",
+  "표시 언어": "Display language",
+  "선택한 언어는 HAGISILTA를 다음에 실행할 때 적용됩니다. 현재 작업을 계속할 수 있습니다.": "Your selected language will apply the next time you launch HAGISILTA. You can continue the current task.",
+  "언어 설정 저장 실패": "Could not save language preference",
+  "{count}개 영상": "{count} [[count|video|videos]]",
+  "{count}개 Arena": "{count} [[count|arena|arenas]]",
+  "{count}개 추적 영역": "{count} tracking [[count|region|regions]]",
+  "{count}개 박스": "{count} [[count|box|boxes]]",
+  "ROI 준비됨 · {counted_unit} · 기준 해상도 {value3}×{value4} · {value5}": "ROIs ready · {counted_unit} · Reference resolution {value3}×{value4} · {value5}",
+  "{counted_unit} 준비": "{counted_unit} ready",
+  "모델 이용 조건": "Model terms",
+  "사전학습 가중치에는 HAGISILTA와 별도의 이용 조건이 적용됩니다. 다운로드하거나 사용하기 전에 확인하세요.": "Pretrained weights have terms separate from HAGISILTA. Read them before downloading or using the weights.",
+  "이용 조건 문서를 열 수 없습니다: {detail}": "Could not open the model terms document: {detail}"
+}

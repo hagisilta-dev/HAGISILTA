@@ -1,0 +1,70 @@
+{
+  "recorded_date": "2026-10-27",
+  "scope": "Unmodified upstream license texts and installed package notice copies; not a complete dependency attribution inventory.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "source_version": "Apache License 2.0",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verification": "Downloaded bytes equal saved bytes; text header validated"
+    },
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "source_url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/COPYING.LGPLv3",
+      "source_version": "FFmpeg n7.1 license document",
+      "bytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "verification": "Downloaded bytes equal saved bytes; text header validated"
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "source_url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/COPYING.GPLv3",
+      "source_version": "FFmpeg n7.1 license document",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "verification": "Downloaded bytes equal saved bytes; text header validated"
+    },
+    {
+      "path": "licenses/LGPL-2.1.txt",
+      "source_url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/COPYING.LGPLv2.1",
+      "source_version": "FFmpeg n7.1 license document",
+      "bytes": 26526,
+      "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe",
+      "verification": "Downloaded bytes equal saved bytes; text header validated"
+    },
+    {
+      "path": "licenses/DeepLabCut-NOTICE.yml",
+      "source_package": "deeplabcut 3.0.0",
+      "source_package_relative_path": "deeplabcut-3.0.0.dist-info/licenses/NOTICE.yml",
+      "source_base": "HAGISILTA application environment / Lib/site-packages",
+      "bytes": 4593,
+      "sha256": "f4ea930b5b1d1a78f4842ff92e508f78de0bd1194e9b9e4b4a1ae580b00f3a5b",
+      "verification": "Byte-for-byte match against the installed package notice"
+    },
+    {
+      "path": "licenses/DLClibrary-NOTICE.yml",
+      "source_package": "dlclibrary 0.0.12",
+      "source_package_relative_path": "dlclibrary-0.0.12.dist-info/NOTICE.yml",
+      "source_base": "HAGISILTA application environment / Lib/site-packages",
+      "bytes": 441,
+      "sha256": "0041fa04e0c9885d88bd6e193bb4fc2980501d7718bac33111304c1699dfcb6e",
+      "verification": "Byte-for-byte match against the installed package notice"
+    }
+  ],
+  "installed_license_cross_checks": [
+    {
+      "installed_package_relative_path": "deeplabcut-3.0.0.dist-info/licenses/LICENSE",
+      "exact_match_to_LGPL_3_0": true,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "match_ignoring_line_endings_and_final_whitespace": true
+    },
+    {
+      "installed_package_relative_path": "dlclibrary-0.0.12.dist-info/LICENSE",
+      "exact_match_to_LGPL_3_0": false,
+      "sha256": "97628afebc60f026f5c2b25d7491c46a5c4ee61f693e7cfa07fbd2c03605979b",
+      "match_ignoring_line_endings_and_final_whitespace": true
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+﻿{
+    "product":  "HAGISILTA",
+    "package":  "app",
+    "version":  "0.3.212",
+    "built_at":  "2026-11-03T12:18:50.4074537Z",
+    "contains_experiment_data":  false,
+    "files":  [
+                  {
+                      "path":  "assets/check.svg",
+                      "size":  419,
+                      "sha256":  "f208c233a688975bf5204e2d9083a79fc8d929692dc2b7e067de92669cc6c59c"
+                  },
+                  {
+                      "path":  "assets/hagisilta-app.ico",
+                      "size":  81756,
+                      "sha256":  "88744dbd56a5ce4ee9510bf6e7b50ab563a1a06998447123dd5dcfae2040acfb"
+                  },
+                  {
+                      "path":  "assets/hagisilta-splash-artwork-v4.png",
+                      "size":  3140603,
+                      "sha256":  "84f6df0efee146d64bda113e8dd88b64969459fdacf3c30eb48ddb273f0c9791"
+                  },
+                  {
+                      "path":  "assets/i18n/en_editors.json",
+                      "size":  122437,
+                      "sha256":  "75a9f203bc7fa660feb7d73a3ce16cf50343d66cb7fcfb4bda618f951b2c166b"
+                  },
+                  {
+                      "path":  "assets/i18n/en_launcher.json",
+                      "size":  417,
+                      "sha256":  "fb30676f105ff782e56c3d6eb34a44a0a3d459f96a787fb31e6277f5970e9cc5"
+                  },
+                  {
+                      "path":  "assets/i18n/en_platform_a.json",
+                      "size":  67165,
+                      "sha256":  "25e78bcd732eef36856345505baa236b8e8c3af211e621d79684ca9fe1b2ea2d"
+                  },
+                  {
+                      "path":  "assets/i18n/en_platform_b.json",
+                      "size":  177376,
+                      "sha256":  "c01825af3b73018139746aab592b9de5e1c2f2e5add1693cf48cf7e03ff6be71"
+                  },
+                  {
+                      "path":  "assets/i18n/en_platform_c.json",
+                      "size":  78165,
+                      "sha256":  "a8e919d85e8f9a4e81dc65b89e9df017363036a7ff241ad790dbdde33f3a697e"
+                  },
+                  {
+                      "path":  "assets/i18n/en_platform_extra.json",
+                      "size":  1417,
+                      "sha256":  "8f835c568411b53f84da12c037fc36318c48d94e65751c2811573807b0fc2afa"
+                  },
+                  {
+                      "path":  "assets/i18n/en_shared.json",
+                      "size":  77269,
+                      "sha256":  "f8ea78c3177c3eb648ecd4107e33f15b062197c5e8b15baaee64b98c72f9197b"
+                  },
+                  {
+                      "path":  "assets/i18n/installer/en.json",
+                      "size":  2990,
+                      "sha256":  "0559f3c63acb35842c5fc7caf73b48266705630ae9bce12ca37de1cac9ae6f05"
+                  },
+                  {
+                      "path":  "assets/i18n/installer/ko.json",
+                      "size":  3330,
+                      "sha256":  "9e61e8f1d5e7b7adbe261c73928f23e72d4c2c2f64a3250cc898fa6aca046256"
+                  },
+                  {
+                      "path":  "assets/spin-down.svg",
+                      "size":  337,
+                      "sha256":  "0e154771999b0751e16f3ddc31d77e2455ba442e62b4b09086810627172666be"
+                  },
+                  {
+                      "path":  "assets/spin-up.svg",
+                      "size":  335,
+                      "sha256":  "c8a5464818326afbc890908991c5aa9edfaa0b256d48cc7f65020051b06f5cc8"
+                  },
+                  {
+                      "path":  "CITATION.cff",
+                      "size":  719,
+                      "sha256":  "3ccdb452444f28512c205dde57b51532fef3596585e5e0c62544812b2b46000e"
+                  },
+                  {
+                      "path":  "environment.yml",
+                      "size":  411,
+                      "sha256":  "65cd4e030097b0bad9e91d7eb7bf4e8587e6016a172bb3665dc49546c037e5f1"
+                  },
+                  {
+                      "path":  "HAGISILTA-Menu.cmd",
+                      "size":  320,
+                      "sha256":  "46aa7230a31abfdaaf0def4369173d70f43c91d9da6293226022c5a924a1a919"
+                  },
+                  {
+                      "path":  "HAGISILTA-Repair.cmd",
+                      "size":  334,
+                      "sha256":  "dd0c36472f85606e9d20339debe3c8e93067ea7b11367ffbd467b3aa12cf13e2"
+                  },
+                  {
+                      "path":  "HAGISILTA-Run.cmd",
+                      "size":  426,
+                      "sha256":  "2660e655961a2534fafeefbb742908f2809ab7d84a5dfebec1e7ad87416bd300"
+                  },
+                  {
+                      "path":  "HAGISILTA-Setup.cmd",
+                      "size":  335,
+                      "sha256":  "fb6246bcb0993a0b07df3f92108f79abb410e6485824602c17ba659e855ad215"
+                  },
+                  {
+                      "path":  "Install-and-Run.ps1",
+                      "size":  634,
+                      "sha256":  "63464dba46c6c6bc85f2a42367c702800923cdbf6be18c157114c149124a03f8"
+                  },
+                  {
+                      "path":  "LICENSE",
+                      "size":  11358,
+                      "sha256":  "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+                  },
+                  {
+                      "path":  "LICENSE_GUIDE.ko.md",
+                      "size":  14472,
+                      "sha256":  "5bf79753a5c8fdf40545c9b4ac6867527c70d3f65d2979f4386a9dc27d823ffa"
+                  },
+                  {
+                      "path":  "LICENSE_GUIDE.md",
+                      "size":  12942,
+                      "sha256":  "3a24e63f4c7d5e30687baec8275cc176d7e0fd2f3d0470c6ee9aef4606ff5289"
+                  },
+                  {
+                      "path":  "LICENSE_SCOPE.json",
+                      "size":  8613,
+                      "sha256":  "f5277f6e5e4758f3fb783965e1df3754608f1c79f9a1be63e9fa4c31cb1a18de"
+                  },
+                  {
+                      "path":  "licenses/DeepLabCut-NOTICE.yml",
+                      "size":  4593,
+                      "sha256":  "f4ea930b5b1d1a78f4842ff92e508f78de0bd1194e9b9e4b4a1ae580b00f3a5b"
+                  },
+                  {
+                      "path":  "licenses/DLClibrary-NOTICE.yml",
+                      "size":  441,
+                      "sha256":  "0041fa04e0c9885d88bd6e193bb4fc2980501d7718bac33111304c1699dfcb6e"
+                  },
+                  {
+                      "path":  "licenses/GPL-3.0.txt",
+                      "size":  35147,
+                      "sha256":  "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+                  },
+                  {
+                      "path":  "licenses/LGPL-2.1.txt",
+                      "size":  26526,
+                      "sha256":  "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe"
+                  },
+                  {
+                      "path":  "licenses/LGPL-3.0.txt",
+                      "size":  7651,
+                      "sha256":  "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+                  },
+                  {
+                      "path":  "licenses/source-provenance.json",
+                      "size":  3275,
+                      "sha256":  "b689a02a68a4bad7e3c6e9eb6493504e718855274e84d761434883642001abfd"
+                  },
+                  {
+                      "path":  "NOTICE",
+                      "size":  830,
+                      "sha256":  "109472139167e602f3cd2be1fd365f27fcc34d4df4ec355ac1f264a13e3fc61b"
+                  },
+                  {
+                      "path":  "PRETRAINED_MODELS.ko.md",
+                      "size":  4672,
+                      "sha256":  "05335724766edc49eec743d997a0cec27824e0b8ce30c51fbf4737d50011cd42"
+                  },
+                  {
+                      "path":  "PRETRAINED_MODELS.md",
+                      "size":  4328,
+                      "sha256":  "c541911a30d489617df9684d6ed54acb9dc06d20cd1e2dffc5ad4b32c7e393a8"
+                  },
+                  {
+                      "path":  "README.ko.md",
+                      "size":  24933,
+                      "sha256":  "0ffa13150f65865184248b24854480f76e70031c30c0ad29e38b1257c25850e8"
+                  },
+                  {
+                      "path":  "README.md",
+                      "size":  22683,
+                      "sha256":  "d47d054c9807356b1592e21fb6650e3702c1227c370fdfc59068ddb8ed1fbfb5"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_analysis_bodyparts.py",
+                      "size":  12982,
+                      "sha256":  "e29f41becc1bd356bdbdb0ce67eaa10abbbfd0b28dc38707de7c7f2d8828f742"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_analysis_range.py",
+                      "size":  4844,
+                      "sha256":  "d4b43469ec471e39a63b447b8e7cd84d5257b15b0749e988087103b0839e6003"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_analysis_range_ui.py",
+                      "size":  27762,
+                      "sha256":  "81f026de23fb930076837c456e07ae54065c7a3290f57a8812624ce57b191839"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_atomic_io.py",
+                      "size":  2402,
+                      "sha256":  "212459de7bc623cfe63302c4a96367795b65c6e7c85d7b9faf5fed72115a984d"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_dataset_split.py",
+                      "size":  23864,
+                      "sha256":  "7e94082e12623a16f721d6e3f9c89f9f8e3865495713cfc90c74ad05c12dc904"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_dlc_worker.py",
+                      "size":  5196,
+                      "sha256":  "f88c4b0f59743c87b14e618e1a94c3776fd8fe9f184a584f31e8b83d0c4056b2"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_environment_check.py",
+                      "size":  2114,
+                      "sha256":  "42c558c7beef1d93ddd5c3544d04e8380d320051d530beb84ca7568f66f5e1ff"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_evaluation_padding.py",
+                      "size":  6725,
+                      "sha256":  "7555b08eee479e5b103ab5f637a94af5fc6d8631253b6406a9ff6ed3e5a652d0"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_filter_review.py",
+                      "size":  41779,
+                      "sha256":  "38357f7d79ce1af42273205037710ef70e82ad38f7ad1013208d190e06dd1861"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_frame_labeling.py",
+                      "size":  15994,
+                      "sha256":  "f0cb1b3ea001c0daeedfb14c69702873def11d6a2ffc14d24a02adfa418908bd"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_i18n.py",
+                      "size":  8412,
+                      "sha256":  "813980d545ff18169cfaf7bb96180d7ec18c7987dcc1ea288fdd83a94bd37942"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_import_quick_rois.py",
+                      "size":  8497,
+                      "sha256":  "5a5cee7baed67ff53c6329825ba0cebfeefb32decf32d6545c617ddb53bd9796"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_import_video_review.py",
+                      "size":  21574,
+                      "sha256":  "be37d984992f2de6e744c8df2526128f0516ffdd98af53749fd3a72ec5273f76"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_input_preview.py",
+                      "size":  12226,
+                      "sha256":  "fe1de47f2d01dae6d9b9ac515a877d5d5c1defe2aca6126df8c3500cd53aff60"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_label_review.py",
+                      "size":  4349,
+                      "sha256":  "0d1401f3f8a87b2d733327b23fd123d2a8c15a398b8b8401ed3be518ea877caf"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_labeled_video.py",
+                      "size":  11786,
+                      "sha256":  "0ed62d8094614e923f67384a2283a0802144b334452e2dfb1c79e4430d67c1ce"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_launcher.py",
+                      "size":  10398,
+                      "sha256":  "24c4b60e7b19a56914bcd409b0bd9352618706d65de3ff8e9743e87487e39e15"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_nort_analysis.py",
+                      "size":  44848,
+                      "sha256":  "550fc038c70759285c365ed6743f343a5f0146c6288e061b174347adce2eae8a"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_nort_editor.py",
+                      "size":  128717,
+                      "sha256":  "2d75c70b4977f591eff0dcb05c66697ebf93a1cd7505e9c6effb055a74884d33"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_platform.py",
+                      "size":  1307120,
+                      "sha256":  "4e67e7458b88d3437952a568eb10f7b994ee29e69e07333c5f794cc8aaa5a3ad"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_playback.py",
+                      "size":  3145,
+                      "sha256":  "b13c7dc6e6da9a709481f25363963612c0a0b53044ef5f3dfba020fd37e04ef8"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_portable_bundle.py",
+                      "size":  18466,
+                      "sha256":  "c0f58f2a506cf7d16ea7424c5288c2d39736df3c4c0250d8a371f3feb39ea639"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_pose_filter_controls.py",
+                      "size":  30224,
+                      "sha256":  "25ae744f2b985595f276f9847662dfebe63b7e2a29c655417095e57ae93f4946"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_pose_filter_status.py",
+                      "size":  7243,
+                      "sha256":  "3cc55af567fdbea27a77a6b5282203af5bdfd1eee2e51c5325fa228384018f24"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_pose_model_catalog.py",
+                      "size":  5146,
+                      "sha256":  "30db451565e497e444c6e690c890344d7b037381d67057b44a98e05d7b2824d6"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_pose_postprocess.py",
+                      "size":  37492,
+                      "sha256":  "0b0b6c08b1cd3f52487224a75ea2b0beb6bf7b5a00a281da4134d76fd24c616c"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_pose_qc.py",
+                      "size":  12821,
+                      "sha256":  "f4e3f243d05f00288830cc14d57b8d41d63e2be0e77266403cdeb1db8ec1cae2"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_result_composer.py",
+                      "size":  110479,
+                      "sha256":  "553a6f2d62dc492d8e9f85601d5016eedb19d5e2b3c45cbe2dabfb08be15b73d"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_review_baseline.py",
+                      "size":  3809,
+                      "sha256":  "c586b37b90fb4b85ac8f7d822a6e99c8b477f0076b20986bd2772fed3c3bdd2b"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_runtime.py",
+                      "size":  9087,
+                      "sha256":  "d020ddc99010b661b0506e2a3284bb891f3f0fdb3d6c73b788611882783d2b1c"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_source_identity.py",
+                      "size":  1964,
+                      "sha256":  "fd352757bdd0c187ca7c5ecd3bfcfd4cee4ab77840c74edb67fbb1511c7beedc"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_startup.py",
+                      "size":  3510,
+                      "sha256":  "b270ff346cea54f926d4e164dc68ee9ceb2d62ff951ac200d2c642a500376918"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_superanimal_inference.py",
+                      "size":  9465,
+                      "sha256":  "d1e2f7bbfee7d83745c6c35c434c7501a1be6124166d0566526be50b843f6097"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_temporal_episodes.py",
+                      "size":  4011,
+                      "sha256":  "c6d256eea9e1136e11709129df652bfc41743f8c860db457102c1544cbba7c60"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_temporal_refiner.py",
+                      "size":  36510,
+                      "sha256":  "9a0e357eaebccb608364f2b6236f69b0928f7c3695c38492984bb202234c3e26"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_tracking_batch.py",
+                      "size":  48410,
+                      "sha256":  "db98139cd0d6653a42c0c755957d823c41254c13c54a752eac466984cee5a184"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_tracking_crop.py",
+                      "size":  27241,
+                      "sha256":  "33c13b1d9c47301f8f62fd507057b2e71bbff98b6c41918c162c660c08976066"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_tracking_progress.py",
+                      "size":  16597,
+                      "sha256":  "e0046470fd262ff0b0514b88d7f7156405705a962945bb62be1b1b68db9a5805"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_training_crop.py",
+                      "size":  3077,
+                      "sha256":  "a5fe4ed8435a4bf59ec4fcc3a9b8f6197be21fac677bdeb897aacc03a4cf3795"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_training_input.py",
+                      "size":  18624,
+                      "sha256":  "4c67c1a64d524cc7ff98514a89dcb764d599b317eb749273947cdeb3c8829679"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_training_worker.py",
+                      "size":  38253,
+                      "sha256":  "5dbad2a3e7e3aeb9c43c1aac8e33b5c52d1c07d5dda34771023e9eaffd1550f7"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_video_review.py",
+                      "size":  130350,
+                      "sha256":  "616b1b4f31706cd3c9c68d3f307b6d0f75fb0fd49040a39d9b6b34f283fcdc98"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_vram_benchmark.py",
+                      "size":  7718,
+                      "sha256":  "755fc66730711ab3bf364dbf0d916356d27d229fcc386c2f01fbe667d9e43e28"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_watermaze_analysis.py",
+                      "size":  27364,
+                      "sha256":  "7fee5a3b484c7d2f2665a39a227dd7488fda69a39ac85321b6f7c14649db794f"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_watermaze_roi_overlay.py",
+                      "size":  9018,
+                      "sha256":  "957fe9f26dfe753a7e4cdd1980204047d964f0c739bfcd7dc4afd5c7ce21bfba"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_watermaze_ui.py",
+                      "size":  260616,
+                      "sha256":  "194440f5a7acf58995a34b9d66bd4e4a0acce86829f9acdbfc7fa92c7ca43b35"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_window_chrome.py",
+                      "size":  19123,
+                      "sha256":  "6b8e74d77a50cab26b488f159682cc655435712703254b6aab3a1268a4124049"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_ymaze_analysis.py",
+                      "size":  27617,
+                      "sha256":  "92cbba119bbed379be1ee327440a95d872d40a4b65ab5f2b1a948daba5420c77"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_zone_analysis.py",
+                      "size":  10274,
+                      "sha256":  "ab55c8b78a0749267046726914592d508be07adcb9712bd62c57ebdbd3a04b8b"
+                  },
+                  {
+                      "path":  "scripts/hagisilta_zone_editor.py",
+                      "size":  116839,
+                      "sha256":  "86211d99859a5631a1aaaba389f83acfea85891d6b5343359b9932896d54b1e0"
+                  },
+                  {
+                      "path":  "scripts/HAGISILTA-Installer.ps1",
+                      "size":  16268,
+                      "sha256":  "f11f85a5b6eb3d2f9b1556b479f4a63cae81fa2fbe8333d42cc91e797e353605"
+                  },
+                  {
+                      "path":  "VERSION.txt",
+                      "size":  9,
+                      "sha256":  "94972d30132d569c9663d6ff0f39f90c1a69f8a94f1e5ec08826f0c945e8e5bd"
+                  }
+              ]
+}

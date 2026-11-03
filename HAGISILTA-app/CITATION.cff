@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2026 Ok Seungwon and Song Jun-Hwi
+# SPDX-License-Identifier: Apache-2.0
+cff-version: 1.2.0
+message: >-
+  If you use HAGISILTA in your research, please cite this software
+  using the metadata below.
+type: software
+title: HAGISILTA
+abstract: >-
+  HAGISILTA is a DeepLabCut-based graphical interface for rodent video
+  labeling, pose tracking, manual review, and behavioral analysis.
+  The name stands for Human-Assisted Graphical Interface for Systematic
+  Inspection, Labeling, Tracking, and Analysis.
+authors:
+  - family-names: Ok
+    given-names: Seungwon
+  - family-names: Song
+    given-names: Jun-Hwi
+version: "0.3.212"
+date-released: "2026-11-03"
+license: Apache-2.0

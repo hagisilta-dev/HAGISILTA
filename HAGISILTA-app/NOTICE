@@ -1,0 +1,21 @@
+HAGISILTA
+Copyright 2026 Ok Seungwon and Song Jun-Hwi
+
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+Current splash artwork: Artwork by Song Jun-Hwi.
+
+DeepLabCut Toolbox (deeplabcut.org)
+Copyright A. & M.W. Mathis Labs
+https://github.com/DeepLabCut/DeepLabCut
+Licensed under the GNU Lesser General Public License v3.0 or later.
+See licenses/DeepLabCut-NOTICE.yml and upstream AUTHORS for contributors.
+
+Qt / Qt for Python
+Copyright The Qt Company Ltd. and other contributors
+https://www.qt.io/ and https://doc.qt.io/qtforpython-6/
+The QtCore, QtGui and QtWidgets modules used here offer an LGPLv3 option.
+
+Dependency licenses, artwork and upstream notices: LICENSE_GUIDE.md and licenses/.
+Application license scope: LICENSE_SCOPE.json.
+Separately licensed model weights: PRETRAINED_MODELS.md.
