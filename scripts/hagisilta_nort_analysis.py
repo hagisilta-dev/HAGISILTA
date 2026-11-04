@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from hagisilta_i18n import tr
+from hagisilta_render_text import configure_plot_fonts
 
 import argparse
 import json
@@ -726,6 +727,7 @@ def render_arena_visuals(
     exploration_csv = save_heat_grid(exploration_csv, exploration)
 
     trajectory_path = output_dir / f"arena_{arena_number:02d}_trajectory.png"
+    configure_plot_fonts()
     fig, ax = plt.subplots(
         figsize=(RESULT_RENDER_WIDTH_IN, 12.0),
         dpi=RESULT_RENDER_DPI,
@@ -746,6 +748,7 @@ def render_arena_visuals(
         ("exploration", exploration, common_exploration_max, "Nose exploration time", exploration_csv),
     ):
         image_path = output_dir / f"arena_{arena_number:02d}_{key}_heatmap.png"
+        configure_plot_fonts()
         fig, ax = plt.subplots(
             figsize=(RESULT_RENDER_WIDTH_IN, 12.0),
             dpi=RESULT_RENDER_DPI,
@@ -793,6 +796,7 @@ def generate_subject_visualizations(results: list[dict], output: Path) -> Path:
     for result in results:
         result.update(render_arena_visuals(result, occupancy_max, exploration_max))
 
+    configure_plot_fonts()
     figure, axes = plt.subplots(
         len(results), 3,
         figsize=(RESULT_RENDER_WIDTH_IN, max(4.2 * len(results), 4.5)),

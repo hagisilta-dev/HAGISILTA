@@ -351,8 +351,12 @@ SuperAnimal-TopViewMouse 가중치에는 사전학습 추론과 지원하는 학
 선택한 화면 언어에 맞는 이용 조건을 열 수 있습니다.
 이 가중치는 별도로 내려받으며 HAGISILTA의 Apache-2.0 적용 대상에 포함되지 않습니다.
 
-## 인용
+## 연구 방법 작성 예시
 
-연구에서 HAGISILTA를 사용했다면 [CITATION.cff](CITATION.cff)의 소프트웨어 정보를
-인용해 주세요. 인용 저자는 Ok Seungwon, Song Jun-Hwi 순서이며 현재 버전은
-0.3.212 (2026-11-03)입니다. 실제 연구에 사용한 릴리스 버전을 인용하세요.
+연구에서 HAGISILTA를 사용했다면 Materials and Methods에 프로그램명, 버전과
+[저장소 주소](https://github.com/hagisilta-dev/HAGISILTA)를 적어 주세요.
+
+예: "영상 분석에는 HAGISILTA(버전 X.Y.Z;
+https://github.com/hagisilta-dev/HAGISILTA)를 사용했습니다."
+`X.Y.Z`는 실제 연구에 사용한 버전으로 바꾸세요.
+

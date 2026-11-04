@@ -21,6 +21,7 @@ from PySide6.QtWidgets import (
 )
 
 from hagisilta_i18n import tr
+from hagisilta_render_text import draw_image_text, image_text_size
 from hagisilta_window_chrome import (
     HeaderContext, apply_hagisilta_window_identity, create_hagisilta_header,
     create_hagisilta_help_button, enable_full_window_controls,
@@ -1223,7 +1224,7 @@ class WaterMazeVisualComposer(QDialog):
                 )
                 font_scale = self.quadrant_text_size.value() / 30.0 * scale
                 text_weight = max(1, round(self.quadrant_text_size.value() / 14.0 * scale))
-                cv2.putText(image, name, point, cv2.FONT_HERSHEY_SIMPLEX, font_scale, text_color, text_weight, cv2.LINE_AA)
+                draw_image_text(image, name, point, cv2.FONT_HERSHEY_SIMPLEX, font_scale, text_color, text_weight, cv2.LINE_AA)
         if draw_trail and self.component_checks["trail"].isChecked():
             valid = data["valid"]
             points = np.column_stack((data["x"][valid] * scale_x, data["y"][valid] * scale_y))
@@ -1835,8 +1836,8 @@ class NortVisualComposer(WaterMazeVisualComposer):
                     continue
                 center = polygon.mean(axis=0)
                 text = role
-                size, baseline = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, font_scale, weight)
-                cv2.putText(image, text, (round(center[0] - size[0] / 2), round(center[1] + (size[1] - baseline) / 2)), cv2.FONT_HERSHEY_SIMPLEX, font_scale, color, weight, cv2.LINE_AA)
+                size, baseline = image_text_size(text, cv2.FONT_HERSHEY_SIMPLEX, font_scale, weight)
+                draw_image_text(image, text, (round(center[0] - size[0] / 2), round(center[1] + (size[1] - baseline) / 2)), cv2.FONT_HERSHEY_SIMPLEX, font_scale, color, weight, cv2.LINE_AA)
 
     def metric_text(self, summary: dict) -> str:
         novel = self._number(summary.get("novel_seconds"))
@@ -2054,14 +2055,14 @@ class YMazeVisualComposer(WaterMazeVisualComposer):
             weight = max(1, round(self.quadrant_text_size.value() / 14.0 * scale))
             for _zone_id, label, polygon, _points in prepared_zones:
                 centroid = polygon.mean(axis=0)
-                (text_width, text_height), baseline = cv2.getTextSize(
+                (text_width, text_height), baseline = image_text_size(
                     label, cv2.FONT_HERSHEY_SIMPLEX, font_scale, weight,
                 )
                 origin = (
                     round(float(centroid[0]) - text_width / 2),
                     round(float(centroid[1]) + (text_height - baseline) / 2),
                 )
-                cv2.putText(image, label, origin, cv2.FONT_HERSHEY_SIMPLEX, font_scale, text_color, weight, cv2.LINE_AA)
+                draw_image_text(image, label, origin, cv2.FONT_HERSHEY_SIMPLEX, font_scale, text_color, weight, cv2.LINE_AA)
 
     def metric_text(self, summary: dict) -> str:
         percent = self._number(summary.get("alternation_percent"))

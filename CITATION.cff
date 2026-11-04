@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: Apache-2.0
 cff-version: 1.2.0
 message: >-
-  If you use HAGISILTA in your research, please cite this software
-  using the metadata below.
+  If you use HAGISILTA in your research, please mention the software,
+  version, and repository URL in Materials and Methods.
 type: software
 title: HAGISILTA
 abstract: >-
@@ -16,6 +16,7 @@ authors:
     given-names: Seungwon
   - family-names: Song
     given-names: Jun-Hwi
-version: "0.3.212"
+repository-code: "https://github.com/hagisilta-dev/HAGISILTA"
+version: "0.3.213"
 date-released: "2026-11-03"
 license: Apache-2.0

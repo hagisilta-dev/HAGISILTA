@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from hagisilta_i18n import init_i18n, tr
+from hagisilta_render_text import draw_image_text
 
 import json
 import math
@@ -567,7 +568,7 @@ class WaterMazeDecisionViewer(QDialog):
             for name, offset in (("NE", 45), ("SE", 135), ("SW", 225), ("NW", 315)):
                 angle = math.radians(angle_offset + offset)
                 point = (round(cx + rx * .58 * math.sin(angle)), round(cy - ry * .58 * math.cos(angle)))
-                cv2.putText(frame, name, point, cv2.FONT_HERSHEY_SIMPLEX, .52, (245, 245, 245), 1, cv2.LINE_AA)
+                draw_image_text(frame, name, point, cv2.FONT_HERSHEY_SIMPLEX, .52, (245, 245, 245), 1, cv2.LINE_AA)
         if self.show_platform:
             platform = self.profile["platform"]
             points = np.asarray(platform.get("points_px") or [], dtype=np.int32)
@@ -597,7 +598,7 @@ class WaterMazeDecisionViewer(QDialog):
             if self.show_points:
                 cv2.circle(frame, point, 4, colors[index % len(colors)], -1, cv2.LINE_AA)
             if self.show_point_labels:
-                cv2.putText(frame, part, (point[0] + 6, point[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, .38, colors[index % len(colors)], 1, cv2.LINE_AA)
+                draw_image_text(frame, part, (point[0] + 6, point[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, .38, colors[index % len(colors)], 1, cv2.LINE_AA)
         x = pd.to_numeric(pd.Series([row.get("x")]), errors="coerce").iloc[0]
         y = pd.to_numeric(pd.Series([row.get("y")]), errors="coerce").iloc[0]
         if self.show_points and not pd.isna(x) and not pd.isna(y):
@@ -627,13 +628,13 @@ class WaterMazeDecisionViewer(QDialog):
             f"ZONE {zone}  |  platform {'IN' if in_platform else 'OUT'}"
             f"  |  analysis {analysis_time:.2f}s"
         )
-        cv2.putText(
+        draw_image_text(
             frame, first_line, (round(20 * scale), round(30 * scale)),
             cv2.FONT_HERSHEY_SIMPLEX, .50 * scale, (132, 236, 178),
             max(1, round(scale)), cv2.LINE_AA,
         )
         for index, text in enumerate(metric_lines):
-            cv2.putText(
+            draw_image_text(
                 frame, text,
                 (round(20 * scale), round((53 + index * 19) * scale)),
                 cv2.FONT_HERSHEY_SIMPLEX, .42 * scale, (200, 207, 218),

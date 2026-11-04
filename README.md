@@ -402,9 +402,12 @@ headers opens these conditions in the selected interface language.
 These weights are downloaded separately and are not covered by HAGISILTA's
 Apache-2.0 license.
 
-## Citation
+## Reporting research use
 
-If you use HAGISILTA in your research, please cite the software metadata in
-[CITATION.cff](CITATION.cff), with authors Seungwon Ok and Jun-Hwi Song.
-The current release is 0.3.212 (2026-11-03); cite the version actually used
-in your work.
+If you use HAGISILTA in your research, please mention it in Materials and Methods
+with the version and [repository URL](https://github.com/hagisilta-dev/HAGISILTA).
+
+Example: "Videos were analyzed using HAGISILTA (version X.Y.Z;
+https://github.com/hagisilta-dev/HAGISILTA)."
+Replace `X.Y.Z` with the version used in your research.
+

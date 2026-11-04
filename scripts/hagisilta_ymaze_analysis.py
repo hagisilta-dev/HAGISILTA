@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from hagisilta_i18n import tr
+from hagisilta_render_text import configure_plot_fonts
 
 import argparse
 import json
@@ -311,6 +312,7 @@ def analyze_arena(
         if ok:
             background = cv2.cvtColor(background, cv2.COLOR_BGR2RGB)
             height, width = background.shape[:2]
+            configure_plot_fonts()
             fig, axes = plt.subplots(
                 1, 2,
                 figsize=(RESULT_RENDER_WIDTH_IN, 7.2),

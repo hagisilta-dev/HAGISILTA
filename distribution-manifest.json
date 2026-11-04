@@ -1,8 +1,8 @@
 ﻿{
     "product":  "HAGISILTA",
     "package":  "app",
-    "version":  "0.3.212",
-    "built_at":  "2026-11-03T12:18:50.4074537Z",
+    "version":  "0.3.213",
+    "built_at":  "2026-11-03T13:18:55.4198935Z",
     "contains_experiment_data":  false,
     "files":  [
                   {
@@ -77,8 +77,8 @@
                   },
                   {
                       "path":  "CITATION.cff",
-                      "size":  719,
-                      "sha256":  "3ccdb452444f28512c205dde57b51532fef3596585e5e0c62544812b2b46000e"
+                      "size":  813,
+                      "sha256":  "35c8b10395089e5cc3fc5edef9a06783ad0c75d8af3131915c83d82082791198"
                   },
                   {
                       "path":  "environment.yml",
@@ -127,8 +127,8 @@
                   },
                   {
                       "path":  "LICENSE_SCOPE.json",
-                      "size":  8613,
-                      "sha256":  "f5277f6e5e4758f3fb783965e1df3754608f1c79f9a1be63e9fa4c31cb1a18de"
+                      "size":  8700,
+                      "sha256":  "b7877eaf2893e005248721f43d4bbc49939ccab2cb3e843ed55a42affe01ca69"
                   },
                   {
                       "path":  "licenses/DeepLabCut-NOTICE.yml",
@@ -177,13 +177,13 @@
                   },
                   {
                       "path":  "README.ko.md",
-                      "size":  24933,
-                      "sha256":  "0ffa13150f65865184248b24854480f76e70031c30c0ad29e38b1257c25850e8"
+                      "size":  25032,
+                      "sha256":  "277cc5cea50507e345ebcbc6f47ac29c3e2ca7d8f1e1b1c1df676e9c45403c65"
                   },
                   {
                       "path":  "README.md",
-                      "size":  22683,
-                      "sha256":  "d47d054c9807356b1592e21fb6650e3702c1227c370fdfc59068ddb8ed1fbfb5"
+                      "size":  22793,
+                      "sha256":  "3b8ee3a74496daea5ff1e944dab5582c5e9cd156f32a70745fab08876c0ec7e7"
                   },
                   {
                       "path":  "scripts/hagisilta_analysis_bodyparts.py",
@@ -272,8 +272,8 @@
                   },
                   {
                       "path":  "scripts/hagisilta_nort_analysis.py",
-                      "size":  44848,
-                      "sha256":  "550fc038c70759285c365ed6743f343a5f0146c6288e061b174347adce2eae8a"
+                      "size":  44992,
+                      "sha256":  "89d52e20039a0aee0b9464fd790ba542f8b6e930bbc22bb977036aa9b7e6c181"
                   },
                   {
                       "path":  "scripts/hagisilta_nort_editor.py",
@@ -282,8 +282,8 @@
                   },
                   {
                       "path":  "scripts/hagisilta_platform.py",
-                      "size":  1307120,
-                      "sha256":  "4e67e7458b88d3437952a568eb10f7b994ee29e69e07333c5f794cc8aaa5a3ad"
+                      "size":  1307231,
+                      "sha256":  "06dbe051836b74a539f512add524b56bb06e5d9f665806545087ee3e33c0a350"
                   },
                   {
                       "path":  "scripts/hagisilta_playback.py",
@@ -321,9 +321,14 @@
                       "sha256":  "f4e3f243d05f00288830cc14d57b8d41d63e2be0e77266403cdeb1db8ec1cae2"
                   },
                   {
+                      "path":  "scripts/hagisilta_render_text.py",
+                      "size":  3848,
+                      "sha256":  "11f6c3682d711e73f723a1017768f8003b43214c505667205bc8834aff3fd258"
+                  },
+                  {
                       "path":  "scripts/hagisilta_result_composer.py",
-                      "size":  110479,
-                      "sha256":  "553a6f2d62dc492d8e9f85601d5016eedb19d5e2b3c45cbe2dabfb08be15b73d"
+                      "size":  110558,
+                      "sha256":  "00dfb55d8cc933ca76262dc7313a4d3d645e325b6ab199cd60bd591302ae2420"
                   },
                   {
                       "path":  "scripts/hagisilta_review_baseline.py",
@@ -402,8 +407,8 @@
                   },
                   {
                       "path":  "scripts/hagisilta_watermaze_analysis.py",
-                      "size":  27364,
-                      "sha256":  "7fee5a3b484c7d2f2665a39a227dd7488fda69a39ac85321b6f7c14649db794f"
+                      "size":  27534,
+                      "sha256":  "f4a475b0d8ee22f5607a2870c3f0b916618dd4eb4698450daf02eb4fc60239d3"
                   },
                   {
                       "path":  "scripts/hagisilta_watermaze_roi_overlay.py",
@@ -412,8 +417,8 @@
                   },
                   {
                       "path":  "scripts/hagisilta_watermaze_ui.py",
-                      "size":  260616,
-                      "sha256":  "194440f5a7acf58995a34b9d66bd4e4a0acce86829f9acdbfc7fa92c7ca43b35"
+                      "size":  260682,
+                      "sha256":  "d0c536a90529ceeacae7889309329cab1f94771d4865178f10d4ad0e988a4d5d"
                   },
                   {
                       "path":  "scripts/hagisilta_window_chrome.py",
@@ -422,13 +427,13 @@
                   },
                   {
                       "path":  "scripts/hagisilta_ymaze_analysis.py",
-                      "size":  27617,
-                      "sha256":  "92cbba119bbed379be1ee327440a95d872d40a4b65ab5f2b1a948daba5420c77"
+                      "size":  27709,
+                      "sha256":  "751ea6c091a66b18ed8175651410aea9865bbec952779c086d0e66dd91f16d43"
                   },
                   {
                       "path":  "scripts/hagisilta_zone_analysis.py",
-                      "size":  10274,
-                      "sha256":  "ab55c8b78a0749267046726914592d508be07adcb9712bd62c57ebdbd3a04b8b"
+                      "size":  10358,
+                      "sha256":  "36a92269d601b0d1a00058f3cc78f5e476d7dfdcce406f3c9dc44efba893219e"
                   },
                   {
                       "path":  "scripts/hagisilta_zone_editor.py",
@@ -443,7 +448,7 @@
                   {
                       "path":  "VERSION.txt",
                       "size":  9,
-                      "sha256":  "94972d30132d569c9663d6ff0f39f90c1a69f8a94f1e5ec08826f0c945e8e5bd"
+                      "sha256":  "2097ed788d1fe91da40b4be32152e62c35d9b08f5e07076807fbcefd58e037ce"
                   }
               ]
 }

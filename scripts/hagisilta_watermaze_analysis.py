@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from hagisilta_i18n import tr
+from hagisilta_render_text import configure_plot_fonts, draw_image_text
 
 import json
 import math
@@ -47,7 +48,9 @@ def connect_short_gaps(mask: np.ndarray, max_gap_frames: int) -> np.ndarray:
 
 def interpolate_short(values: np.ndarray, valid: np.ndarray, limit: int) -> np.ndarray:
     series = pd.Series(np.where(valid, values, np.nan))
-    return series.interpolate(limit=max(limit, 0), limit_area="inside").to_numpy(dtype=float)
+    if limit <= 0:
+        return series.to_numpy(dtype=float)
+    return series.interpolate(limit=limit, limit_area="inside").to_numpy(dtype=float)
 
 
 def selected_bodypart_coordinates(
@@ -177,7 +180,7 @@ def write_annotated_video(
                     int(round(cx + radius_x * 0.56 * math.sin(angle))),
                     int(round(cy - radius_y * 0.56 * math.cos(angle))),
                 )
-                cv2.putText(
+                draw_image_text(
                     overlay, name, label_point, cv2.FONT_HERSHEY_SIMPLEX,
                     0.45, (245, 245, 245), 1, cv2.LINE_AA,
                 )
@@ -203,11 +206,11 @@ def write_annotated_video(
             cv2.rectangle(panel, (8, 8), (min(width - 8, 460), 88), (7, 13, 22), -1)
             cv2.addWeighted(panel, 0.78, overlay, 0.22, 0, overlay)
             current_zone = str(quadrant[index]) if index < len(quadrant) and quadrant[index] else "N/A"
-            cv2.putText(
+            draw_image_text(
                 overlay, f"ZONE {current_zone}", (20, 34),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.72, (132, 236, 178), 2, cv2.LINE_AA,
             )
-            cv2.putText(
+            draw_image_text(
                 overlay,
                 f"time {(start_frame + index) / max(fps, 1e-9):06.1f}s"
                 f"   analysis {index / max(fps, 1e-9):06.1f}s"
@@ -392,6 +395,7 @@ def analyze(item: dict, settings: dict, output: Path) -> dict:
         for a, b in crossing_runs
     ], columns=crossing_columns).to_csv(crossing_file, index=False, encoding="utf-8-sig")
 
+    configure_plot_fonts()
     figure, axes = plt.subplots(1, 2, figsize=(13, 6), dpi=150)
     for ax in axes:
         ax.imshow(background); ax.set_xlim(0, width); ax.set_ylim(height, 0); ax.axis("off")

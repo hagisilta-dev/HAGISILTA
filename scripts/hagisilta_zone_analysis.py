@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from hagisilta_i18n import tr
+from hagisilta_render_text import configure_plot_fonts
 
 import argparse
 import json
@@ -146,6 +147,7 @@ def analyze_region(
     else:
         width = int(np.nanmax(x) + 1); height = int(np.nanmax(y) + 1)
     background = video_frame(video, 0, width, height)
+    configure_plot_fonts()
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.5), dpi=170)
     axes[0].imshow(background)
     line_x, line_y = x.copy(), y.copy(); line_x[~valid] = np.nan; line_y[~valid] = np.nan

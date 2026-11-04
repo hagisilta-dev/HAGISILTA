@@ -23,6 +23,7 @@ import yaml
 import cv2
 import numpy as np
 from hagisilta_i18n import tr, init_i18n, get_language, save_language
+from hagisilta_render_text import draw_image_text, image_text_size
 from hagisilta_pose_filter_controls import PoseFilterControls, filter_history, history_label
 from hagisilta_analysis_range import load_ymaze_range, save_ymaze_range, validate_range, format_time, same_video_ymaze_arenas
 from hagisilta_playback import PlaybackSpeedControl, PLAYBACK_HELP, PLAYBACK_SPEEDS, playback_interval_ms
@@ -1825,7 +1826,7 @@ class RoiOverviewDialog(QDialog):
         frame = RoiOverviewDialog.read_preview_frame(video, seconds)
         if frame is None:
             frame = np.zeros((360, 640, 3), dtype=np.uint8)
-            cv2.putText(frame, "VIDEO READ ERROR", (28, 190), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (80, 100, 255), 2)
+            draw_image_text(frame, "VIDEO READ ERROR", (28, 190), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (80, 100, 255), 2)
         colors = {"arm_a": (92, 202, 255), "arm_b": (138, 107, 255), "arm_c": (255, 168, 102), "center": (255, 140, 186)}
         for arena in payload.get("arenas", []):
             mask = arena.get("mask_polygon_source_px") or arena.get("corners_source_px") or []
@@ -1836,8 +1837,8 @@ class RoiOverviewDialog(QDialog):
                 if abs(moments["m00"]) > 1e-6:
                     x, y = int(moments["m10"] / moments["m00"]), int(moments["m01"] / moments["m00"])
                     arena_text = f"Arena {int(arena.get('id', 0)):02d}"
-                    cv2.putText(frame, arena_text, (x - 38, y), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (8, 16, 24), 3, cv2.LINE_AA)
-                    cv2.putText(frame, arena_text, (x - 38, y), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (230, 255, 245), 1, cv2.LINE_AA)
+                    draw_image_text(frame, arena_text, (x - 38, y), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (8, 16, 24), 3, cv2.LINE_AA)
+                    draw_image_text(frame, arena_text, (x - 38, y), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (230, 255, 245), 1, cv2.LINE_AA)
             outline = arena.get("maze_outline_polygon_source_px") or []
             if len(outline) >= 3:
                 cv2.polylines(frame, [np.rint(np.asarray(outline)).astype(np.int32)], True, (100, 158, 255), 3, cv2.LINE_AA)
@@ -1853,8 +1854,8 @@ class RoiOverviewDialog(QDialog):
                 if abs(moments["m00"]) > 1e-6:
                     x, y = int(moments["m10"] / moments["m00"]), int(moments["m01"] / moments["m00"])
                     text = {"arm_a": "A", "arm_b": "B", "arm_c": "C", "center": "CENTER"}[zone_id]
-                    cv2.putText(frame, text, (x - 12, y + 6), cv2.FONT_HERSHEY_SIMPLEX, 0.62, (10, 18, 28), 4, cv2.LINE_AA)
-                    cv2.putText(frame, text, (x - 12, y + 6), cv2.FONT_HERSHEY_SIMPLEX, 0.62, (255, 255, 255), 2, cv2.LINE_AA)
+                    draw_image_text(frame, text, (x - 12, y + 6), cv2.FONT_HERSHEY_SIMPLEX, 0.62, (10, 18, 28), 4, cv2.LINE_AA)
+                    draw_image_text(frame, text, (x - 12, y + 6), cv2.FONT_HERSHEY_SIMPLEX, 0.62, (255, 255, 255), 2, cv2.LINE_AA)
         for spatial in record.get("spatial_overlays", []):
             try:
                 setup = json.loads(Path(spatial["setup"]).read_text(encoding="utf-8"))
@@ -1869,8 +1870,8 @@ class RoiOverviewDialog(QDialog):
                 contour = np.rint(np.asarray(points, dtype=np.float32) + offset).astype(np.int32)
                 cv2.polylines(frame, [contour], True, color, 3, cv2.LINE_AA)
                 x, y = np.rint(np.asarray(points, dtype=np.float32).mean(axis=0) + offset).astype(int)
-                cv2.putText(frame, f"Object {object_name}", (int(x) - 32, int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (8, 16, 24), 3, cv2.LINE_AA)
-                cv2.putText(frame, f"Object {object_name}", (int(x) - 32, int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
+                draw_image_text(frame, f"Object {object_name}", (int(x) - 32, int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (8, 16, 24), 3, cv2.LINE_AA)
+                draw_image_text(frame, f"Object {object_name}", (int(x) - 32, int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
         height, width = frame.shape[:2]
         image = QImage(frame.data, width, height, frame.strides[0], QImage.Format_BGR888).copy()
         return QPixmap.fromImage(image).scaled(390, 235, Qt.KeepAspectRatio, Qt.SmoothTransformation)
@@ -2393,7 +2394,7 @@ class BehaviorDecisionViewer(QDialog):
             cv2.circle(frame, point, 5, (10, 18, 28), -1, cv2.LINE_AA)
             cv2.circle(frame, point, 3, color, -1, cv2.LINE_AA)
         if self.show_pose_labels:
-            cv2.putText(
+            draw_image_text(
                 frame, label, (point[0] + 7, point[1] - 6),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.42, color, 1, cv2.LINE_AA,
             )
@@ -2413,7 +2414,7 @@ class BehaviorDecisionViewer(QDialog):
         padding_y = max(7, int(round(9 * resolution_scale)))
         line_gap = max(4, int(round(5 * resolution_scale)))
         metrics = [
-            cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, font_scale, thickness)[0]
+            image_text_size(text, cv2.FONT_HERSHEY_SIMPLEX, font_scale, thickness)[0]
             for text in lines
         ]
         line_height = max((height for _width, height in metrics), default=1)
@@ -2434,7 +2435,7 @@ class BehaviorDecisionViewer(QDialog):
         cv2.addWeighted(overlay, 0.78, frame, 0.22, 0, frame)
         for index, text in enumerate(lines):
             baseline_y = margin + padding_y + line_height + index * line_step
-            cv2.putText(
+            draw_image_text(
                 frame,
                 text,
                 (margin + padding_x, baseline_y),
@@ -2542,8 +2543,8 @@ class BehaviorDecisionViewer(QDialog):
                 label = str(zone.get("label") or zone.get("name") or zone_id).replace("Arm ", "")
                 center = polygon.mean(axis=0)
                 position = (int(center[0]) - 8, int(center[1]) + 6)
-                cv2.putText(frame, label, position, cv2.FONT_HERSHEY_SIMPLEX, 0.62, (8, 13, 20), 4, cv2.LINE_AA)
-                cv2.putText(frame, label, position, cv2.FONT_HERSHEY_SIMPLEX, 0.62, color, 2, cv2.LINE_AA)
+                draw_image_text(frame, label, position, cv2.FONT_HERSHEY_SIMPLEX, 0.62, (8, 13, 20), 4, cv2.LINE_AA)
+                draw_image_text(frame, label, position, cv2.FONT_HERSHEY_SIMPLEX, 0.62, color, 2, cv2.LINE_AA)
 
     def draw_nort(self, frame: np.ndarray, row: pd.Series, index: int) -> None:
         self.draw_roi_zones(frame)
